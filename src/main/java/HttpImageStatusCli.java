@@ -25,7 +25,6 @@ public class HttpImageStatusCli {
                 break;
             }
         }
-
         scanner.close();
     }
 }
