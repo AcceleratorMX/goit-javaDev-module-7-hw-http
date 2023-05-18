@@ -6,7 +6,6 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
 public class HttpStatusImageDownloader {
-
     public void downloadStatusImage(int code) throws IOException {
 
         HttpStatusChecker statusChecker = new HttpStatusChecker();
