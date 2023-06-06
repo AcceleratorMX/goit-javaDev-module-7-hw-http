@@ -11,10 +11,6 @@ public class HttpStatusImageDownloader {
         HttpStatusChecker statusChecker = new HttpStatusChecker();
         String imageUrl = statusChecker.getStatusImage(code);
 
-        if (imageUrl == null) {
-            throw new IllegalArgumentException(code + " - image not found.");
-        }
-
         URL url = new URL(imageUrl);
         try (InputStream in = url.openStream()) {
             int nameStart = imageUrl.lastIndexOf('/');
